@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Simply asynchronous web app to search 
+        for the pronunciation of a user entered word. Good for readers who
+        aren't necessarily talkers.">
+    
+    <title>How do I say this?</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css" type="text/css" rel="stylesheet">
+    <link href="main.css" type="text/css" rel="stylsheet">
+    
+    <script
+        src="https://code.jquery.com/jquery-3.4.0.min.js"
+        integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+        crossorigin="anonymous">
+    </script>
+
+</head>
+
+<body>
+    
+    <header role="banner">
+        <h1>How do I say this?</h1>
+    </header>
+
+    <main role="main">
+
+        <section class="search-style">
+            <form role="form" class="search-form-style js-search-form">
+                
+                <label for="js-word-input">
+                    <input id="js-word-input" name="js-word-input" type="text" required placeholder="Enter that pesky word">
+                </label>
+
+                <button type="submit">Get pronunciation</button>
+            
+            </form>
+        </section>
+
+
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy;2019<a href="mailto:pulchrit@gmail.com">Melissa Lafranchise</a></p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
