@@ -86,7 +86,7 @@ function getPronunciation(word) {
     .then(handleNetworkErrors) 
     .then(handle404Errors) 
     .then(responseJson => displayResults(responseJson, word))
-    .catch(error => $(".js-results").html(`<p>${error}</p>`))
+    .catch(error => $(".js-results").html(`<p>${error}</p>`));
 }
 
 function onWordSubmitted() {
